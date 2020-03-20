@@ -1,0 +1,49 @@
+Plotly Assignment
+
+Problem Statement:
+
+Sam’s next exam is on the plotly package. The questions will be asked on the basis of what you’ve learnt in the respective module.
+Questions:
+
+1.	Build a histogram for the ‘tenure’ column.
+> plot_ly(data=customer_churn, x=~tenure, type = "histogram")
+ 
+
+a.	Color should be determined by ‘gender’ column
+2.	> plot_ly(data=customer_churn, x=~tenure, type = "histogram", color=~gender)
+3.	Warning messages:
+4.	1: In RColorBrewer::brewer.pal(N, "Set2") :
+5.	  minimal value for n is 3, returning requested palette with 3 different levels
+6.	
+7.	2: In RColorBrewer::brewer.pal(N, "Set2") :
+8.	  minimal value for n is 3, returning requested palette with 3 different levels
+ 
+b.Color should be determined by ‘PaymentMethod’ column
+> plot_ly(data=customer_churn, x=~tenure, type = "histogram", color=~PaymentMethod)
+ 
+
+9.	Create a scatter plot between ‘tenure’ & ‘MonthlyCharges’. Map ‘tenure’ on the y-axis & ‘MonthlyCharges’ on the ‘x-axis’
+a.	Color should be determined by ‘InternetService’ column
+10.	> plot_ly(data=customer_churn, y=~tenure, x=~MonthlyCharges, mode="marker", color=~InternetService )
+11.	No trace type specified:
+12.	  Based on info supplied, a 'scatter' trace seems appropriate.
+13.	  Read more about this trace type -> https://plot.ly/r/reference/#scatter
+ 
+b.	Color should be determined by ‘Contract’ column
+c.	> plot_ly(data=customer_churn, y=~tenure, x=~MonthlyCharges, mode="marker", color=~Contract)
+d.	No trace type specified:
+e.	  Based on info supplied, a 'scatter' trace seems appropriate.
+f.	  Read more about this trace type -> https://plot.ly/r/reference/#scatter
+ 
+
+
+3.	Create a box-plot between ‘tenure’ & ‘MultipleLines’. Map ‘tenure’ on the y-axis & ‘MultipleLines’ on the x-axis
+a.	Color should be determined by ‘Dependents’ column
+4.	> plot_ly(data=customer_churn, y=~tenure, x=~MultipleLines, type="box", color = ~Dependents)
+5.	Warning messages:
+6.	1: In RColorBrewer::brewer.pal(N, "Set2") :
+7.	  minimal value for n is 3, returning requested palette with 3 different levels
+8.	
+9.	2: In RColorBrewer::brewer.pal(N, "Set2") :
+10.	  minimal value for n is 3, returning requested palette with 3 different levels
+ 

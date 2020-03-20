@@ -1,0 +1,23 @@
+Facet Grid Assignment
+Problem Statement:
+Sam’s next exam is on ‘Facet Grid’ from the ggplot2 package. The questions will be asked on the basis of what you’ve learnt in the respective module.
+Questions:
+1. Build a box-plot between ‘tenure’ & ‘MultipleLines’. Map ‘tenure’ on the y-axis & ‘MultipleLines’ on the x-axis. Map ‘InternetService’ to the fill aesthetic
+a. Facet the plot w.r.t ‘InternetService’ column
+> ggplot(data=customer_churn, aes(x=tenure, y=MultipleLines, fill=Contract))+geom_boxplot()->g1
+> g1+facet_grid(~InternetService)
+ 
+2. Build a scatter-plot between ‘TotalCharges’ & ‘tenure’. Map ‘TotalCharges’ on the y-axis &
+‘tenure’ on the x-axis. Map ‘Contract’ onto col aesthetic
+a.	Facet the plot w.r.t ‘Contract’ column
+b.	> ggplot(data=customer_churn, aes(x=tenure, y=TotalCharges, fill=Contract))+geom_point()->g2
+c.	> g2+facet_grid()
+d.	Warning message:
+e.	Removed 11 rows containing missing values (geom_point). 
+ 
+3. Build a histogram for the ‘MonthlyCharges’ column. Map ‘PaymentMethod’ onto fill aesthetic.
+a. Facet the plot w.r.t ‘PaymentMethod’ column
+> ggplot(data=customer_churn, aes(x=MonthlyCharges, fill=PaymentMethod))+geom_histogram()->g3
+> g3+facet_grid()
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ 

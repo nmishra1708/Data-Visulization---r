@@ -1,0 +1,28 @@
+geom_histogram() Function Assignment
+Problem Statement:
+Sam’s next exam is on ‘geom_histogram()’ function from the ggplot2 package. The questions will be asked on the basis of what you’ve learnt in the respective module.
+Questions:
+1. Build a histogram for the ‘tenure’ column
+a. Assign the fill color to be ‘mediumspringgreen’
+b. Assign the boundary color to be ‘azure’
+c. Change the number of bins to be 100
+> ggplot(data=customer_churn, aes(x = tenure)) +geom_histogram(bins=100, fill='mediumspringgreen', col='azure')
+ 
+2. Build histogram for the ‘MonthlyCharges’ column
+a. Assign ‘PaymentMethod’ to the fill aesthetic
+b. Assign ‘OnlineBackup’ to the fill aesthetic
+> ggplot(data=customer_churn, aes(x=MonthlyCharges, fill=PaymentMethod))+geom_histogram()
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+
+ 
+> ggplot(data=customer_churn, aes(x=MonthlyCharges, fill=OnlineBackup))+geom_histogram()
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+ 
+3. Build histogram for the ‘TotalCharges’ column
+a. Assign ‘gender’ to the fill aesthetic
+b. Assign ‘InternetService’ to the fill aesthetic
+> ggplot(data=customer_churn, aes(x=TotalCharges, fill=gender))+geom_histogram()
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+Warning message:
+Removed 11 rows containing non-finite values (stat_bin). 
+ 

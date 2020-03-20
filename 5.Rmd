@@ -1,0 +1,25 @@
+geom_boxplot() Function Assignment
+
+Problem Statement:
+Sam’s next exam is on ‘geom_boxplot()’ function from the ggplot2 package. The questions will be asked on the basis of what you’ve learnt in the respective module.
+Questions:
+1. Build a box-plot between ‘tenure’ & ‘Partner’. Map ‘tenure’ to the y-axis & ‘Partner’ to the ‘xaxis’
+a. Assign it a fill color of ‘violet’
+b. Assign it a boundary color of ‘snow3’
+> ggplot(data=customer_churn, aes(y=tenure, x=Partner))+geom_boxplot(fill='violet',outlier.color = 'snow3')
+ 
+2. Build a box-plot between ‘tenure’ & ‘MultipleLines’. Map ‘tenure’ to the y-axis & ‘MultipleLines’ to the ‘x-axis’
+a. Assign ‘Partner’ to the fill aesthetic
+> ggplot(data=customer_churn, aes(y=tenure, x=MultipleLines, fill=Partner))+geom_boxplot()
+ 
+b. Assign ‘PhoneService’ to the fill aesthetic
+
+> ggplot(data=customer_churn, aes(y=tenure, x=MultipleLines, fill=PhoneService))+geom_boxplot()
+ 
+3. Build a box-plot between ‘tenure’ & ‘Contract’
+a. Assign ‘InternetService’ to the fill aesthetic
+> ggplot(data=customer_churn, aes(y=tenure, x=Contract, fill=InternetService))+geom_boxplot()
+ 
+b. Assign ‘PaymentMethod’ to the fill aesthetic
+> ggplot(data=customer_churn, aes(y=tenure, x=Contract, fill=PaymentMethod))+geom_boxplot()
+ 

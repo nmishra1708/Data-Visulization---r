@@ -1,0 +1,37 @@
+geom_point() Function Assignment
+Problem Statement:
+Sam’s next exam is on ‘geom_point()’ function from the ggplot2 package. The questions will be asked on the basis of what you’ve learnt in the respective module.
+Questions:
+1. Build a scatter-plot between ‘TotalCharges’ & ‘tenure’. Map ‘TotalCharges’ to the y-axis &
+‘tenure’ to the ‘x-axis’
+a.	Assign it the color ‘wheat3’
+b.	> ggplot(data=customer_churn, aes(y=TotalCharges, x=tenure))+geom_point(col='wheat3')
+c.	Warning message:
+d.	Removed 11 rows containing missing values (geom_point). 
+ 
+b. Use ‘col’ as an aesthetic and Map ‘PaymentMethod’ to col
+> ggplot(data=customer_churn, aes(y=TotalCharges, x=tenure, col=PaymentMethod))+geom_point()
+Warning message:
+Removed 11 rows containing missing values (geom_point). 
+ 
+c. Use ‘col’ as an aesthetic and Map ‘gender’ to col
+> ggplot(data=customer_churn, aes(y=TotalCharges, x=tenure, col=gender))+geom_point()
+Warning message:
+Removed 11 rows containing missing values (geom_point).
+ 
+e.	Map ‘Dependents’ to both ‘col’ & ‘shape’ aesthetics
+f.	> ggplot(data=customer_churn, aes(y=TotalCharges, x=tenure, col=Dependents, shape=Dependents))+geom_point()
+g.	Warning message:
+h.	Removed 11 rows containing missing values (geom_point). 
+ 
+2. Build a scatter-plot between ‘tenure’ & ‘MonthlyCharges’. Map ‘tenure’ to the y-axis &
+‘MonthlyCharges’ to the ‘x-axis’
+a.	Assign it the color ‘yellowgreen’
+b.	> ggplot(data=customer_churn, aes(y=tenure, x=MonthlyCharges))+geom_point(col='yellowgreen')
+ 
+c.	Use ‘col’ as an aesthetic and Map ‘InternetService’ to col
+d.	> ggplot(data=customer_churn, aes(y=tenure, x=MonthlyCharges, col=InternetService))+geom_point()
+ 
+c. Use ‘col’ as an aesthetic and Map ‘Contract’ to col
+> ggplot(data=customer_churn, aes(y=tenure, x=MonthlyCharges, col=Contract))+geom_point()
+ 

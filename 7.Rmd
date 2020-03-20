@@ -1,0 +1,36 @@
+Theme Layer Assignment
+
+Problem Statement:
+Sam’s next exam is on ‘Theme’ layer from the ggplot2 package. The questions will be asked on the basis of what you’ve learnt in the respective module.
+Questions:
+1.	Build a bar-plot for the ‘gender’ column. Give it a fill color of ‘blue4’
+2.	> ggplot(data=customer_churn, aes(x=gender))+geom_bar(fill='blue4')
+3.	> ggplot(data=customer_churn, aes(x=gender))+geom_bar(fill='blue4')->g1
+ 
+a.	Give the panel a background color of ‘chartreuse4’
+b.	> g1+theme(panel.background = element_rect(fill='chartreuse4'))
+c.	> g1+theme(panel.background = element_rect(fill='chartreuse4'))->g2
+ 
+b. Give the plot a background color of ‘cornsilk4’
+> g2+theme(plot.background = element_rect(fill = 'cornsilk4'))
+ 
+2. Build a scatter-plot between ‘tenure’ & ‘MonthlyCharges’. Map ‘tenure’ on the y-axis & ‘MonthlyCharges’ on the x-axis. Assign a color of ‘yellowgreen’ to the points.
+> ggplot(data=customer_churn, aes(y=tenure, x=MonthlyCharges))+geom_point(col='yellowgreen')
+ 
+a.	Add a title to the plot ‘Tenure vs Monthly Charges’
+b.	> g1+labs(title="Tenure Vs MonthlyCharges")
+c.	> g1+labs(title="Tenure Vs MonthlyCharges")->g2
+ 
+
+b. Give the panel a background color of ‘coral2’
+> g2+theme(panel.background = element_rect(fill='coral2'))
+> g2+theme(panel.background = element_rect(fill='coral2'))->g3
+ 
+c.Give the plot a background color of ‘beige’
+> g3+theme(plot.background = element_rect(fill='beige'))
+> g3+theme(plot.background = element_rect(fill='beige'))->g4
+ 
+
+d.	Center align the title & make the color of the title to be red
+e.	> g4+theme(plot.title = element_text(hjust = 0.5, color = 'red'))
+ 
